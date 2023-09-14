@@ -50,6 +50,7 @@ html, body {
 header {
   background-color: #F0EFE9;
   padding: 16px;
+  display: flex;
 }
 header .container {
   display: flex;
@@ -212,4 +213,116 @@ header .menu .main-menu nav a:hover {
   .showcase .container img {
     display: block;
   }
+}
+
+.affiliates {
+  background-color: #FFFFFF;
+}
+.affiliates .container {
+  display: none;
+}
+@media (min-width: 992px) {
+  .affiliates .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 75px;
+  }
+}
+.affiliates .container img {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.features {
+  background-color: #FFFFFF;
+}
+.features .container {
+  display: grid;
+  grid: 1fr;
+  gap: 40px;
+  grid-template-areas: "big-1 big-1 small-1 small-2" "big-1 big-1 small-3 small-4";
+}
+.features .container .btn-features {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 25px;
+  grid-area: big-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 60px;
+}
+.features .container .btn-features .fa-regular fa-arrow-up-right {
+  margin-left: 8px;
+  font-size: 0, 9em;
+}
+.features .container .btn-features:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #DAD9D3;
+}
+.features .container .fa-regular.fa-handshake {
+  font-size: 24px;
+  padding-top: 115px;
+  padding-bottom: 30px;
+}
+.features .container .fa-regular.fa-lightbulb-on {
+  font-size: 24px;
+  padding-top: 115px;
+  padding-bottom: 30px;
+}
+.features .container .fa-light.fa-chart-mixed-up-circle-dollar {
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.features .container .fa-light.fa-cube {
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.features h2 {
+  font-family: "DM Sans", sans serif;
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.features h3 {
+  font-family: "DM Sans", sans serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.features .feat-1 {
+  padding-top: 85px;
+  padding-right: 100px;
+  grid-area: big-1;
+}
+.features .feat-1 p {
+  color: #f94d1C;
+  font-size: 18px;
+}
+.features .feat-1 .feat-2 {
+  grid-area: small-1;
+}
+.features .feat-1 .feat-3 {
+  grid-area: small-2;
+}
+.features .feat-1 .feat-4 {
+  grid-area: small-3;
+}
+.features .feat-1 .feat-5 {
+  grid-area: small-4;
 }
