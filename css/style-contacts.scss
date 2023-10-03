@@ -104,16 +104,16 @@ html, body{
     .header {
         background-color: #F0EFE9;
         padding:16px;
-        padding-bottom: 80px;
-        height:200px;
+        height:250px;
         display: flex;
         align-items: center;
         justify-content: center;
         
     
         .container {
+            align-self: first baseline;
             display:flex;
-            align-items: center;
+            align-items:center;
             justify-content: space-between;
             gap:70px;
             top:0;
@@ -171,6 +171,10 @@ html, body{
                         display: block;    
                         display:flex;
                         align-items: center;
+                        }
+                        a {
+                            text-decoration: none;
+                            color:#191919;
                         }
                     }
                         .content-box { 
@@ -230,9 +234,21 @@ html, body{
                                 text-decoration: underline;
                             }
                         }
+                        
+                            #cont {
+                                position: relative;
+                            
+                            .emptybox {
+                                width:20px;
+                                border: 1px solid #191919;
+                                position: absolute;
+                                left: 35%;
+                            }
+                            }
+                        }
                     }
-                }
-            }
+                }   
+            
 
 
     .first-section {
@@ -284,14 +300,24 @@ html, body{
             
                 .container {
                     background-color: #FFFFFF;
-                    display:flex;
-                    justify-content:left;
-                    align-items: center;
                     gap:35px;
                     padding-top: 120px;
                     padding-bottom: 80px;
                     padding-left: 0;
                     padding-right: 0;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+
+                    @media(min-width: 992px) {
+                    display:flex;
+                    flex-direction: row;
+                    justify-content:left;
+                    align-items: center;
+                    }
                 
                 
                     .btn-black {
@@ -348,21 +374,39 @@ html, body{
                     grid-area: line-1;
                     letter-spacing: -1px;
                     line-height: 15px;
+                    font-size: 18px;
                 }
                 .line-2 {
                     grid-area: line-2;
                     letter-spacing: -1px;
                     line-height: 15px;
+                    font-size: 18px;
                 }
-                .nr-1 {
+                .phone-1 {
                     grid-area: line-1;
                     letter-spacing: -1px;
                     line-height: 15px;
+                    text-decoration: none;
+                    letter-spacing: -1px;
+                    line-height: 25px;
+                    font-size: 18px;
+                    color: #191919;
+                    &:hover {
+                        color:#f94d1C;
                 }
-                .nr-2 {
+                }
+                .phone-2 {
                     grid-area: line-2;
                     letter-spacing: -1px;
                     line-height: 15px;
+                    text-decoration: none;
+                    letter-spacing: -1px;
+                    line-height: 25px;
+                    font-size: 18px;
+                    color: #191919;
+                    &:hover {
+                        color:#f94d1C;
+                }
                 }
                 .mail {
                     grid-area: line-1;
@@ -416,11 +460,20 @@ html, body{
             border-radius: 25px;
             border:none;
             padding: 20px;   
-         
+            
             
         }
 
         .your-mess {
+
+                align-self: center;
+                width: 80%;
+                border-radius: 25px;
+                border:none;
+                padding: 20px; 
+                height: 160px;  
+            
+
             
             input {
                 text-align: left;
@@ -445,9 +498,10 @@ html, body{
                 top:20px;
                 left:20px;
                  }
-                }
-                
             }
+            }
+              
+            
             
        
         .btn-yellow{
@@ -456,8 +510,17 @@ html, body{
                 
         }
     
-           
+    }   
+    
+    .map {
+
+        iframe {
+        padding-top: 120px;
+        width: 100%;
+        min-height: 620px;
         }
+    }
+        
            
         
         

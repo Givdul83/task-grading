@@ -12,8 +12,9 @@ html, body{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;  
 }
+
 
 .btn-yellow {
     background-color: #F9D783;
@@ -106,16 +107,16 @@ html, body{
 .header {
     background-color: #F0EFE9;
     padding:16px;
-    padding-bottom: 80px;
-    height:200px;
+    height:250px;
     display: flex;
     align-items: center;
     justify-content: center;
     
 
     .container {
+        align-self: first baseline;
         display:flex;
-        align-items: center;
+        align-items:center;
         justify-content: space-between;
         gap:70px;
         top:0;
@@ -123,6 +124,10 @@ html, body{
         z-index: 10;
         
     }
+       
+        
+        
+    
     .logo {
         align-items: center;
         justify-self: left;  
@@ -173,6 +178,10 @@ html, body{
                     display: block;    
                     display:flex;
                     align-items: center;
+                    }
+                    a {
+                        text-decoration: none;
+                        color:#191919;
                     }
                 }
                     .content-box { 
@@ -231,6 +240,16 @@ html, body{
                         &:hover {
                             text-decoration: underline;
                         }
+                    }
+                    #home {
+                        position: relative;
+                    
+                    .emptybox {
+                        width:20px;
+                        border: 1px solid #191919;
+                        position: absolute;
+                        left: 30%;
+                    }
                     }
                 }
             }
@@ -586,6 +605,7 @@ html, body{
             align-items: center;
             justify-content: center;
             text-align: center;
+            
 
             @media(min-width:1400px){
             text-align:left;
@@ -655,6 +675,10 @@ html, body{
         justify-content: center;
         text-align: center;
         align-items: center;
+        
+        h2 {
+            padding-bottom: 30px;
+        }
 
         @media(min-width:1400px) {
             margin-left: 200px;
@@ -680,6 +704,11 @@ html, body{
         align-items: center;
         gap:40px;
         padding-bottom: 25px;
+        padding-top: 40px;
+
+        @media(min-width:1400px) {
+            padding-top: 0px;
+        }
         
 
         .btn-black {
@@ -1007,18 +1036,17 @@ html, body{
         
     }
     .why-icons {
-
-       display: flex;
-       flex-direction: row;
-       padding-top: 50px;
-       column-gap: 30px;
-        }
+        display: flex;
+        padding-top: 50px;
+        column-gap: 30px;
+        
 
        @media(min-width:1400px) {
+        
         flex-direction: column;
         padding-top: 0px;
        }
-       
+    }
 
        .process{
             display:grid;
@@ -1413,6 +1441,7 @@ html, body{
             flex-direction: row;
             column-gap: 50px;
             justify-content: center;
+            margin-left: 100px;
             
 
             }
@@ -1436,9 +1465,15 @@ html, body{
                    justify-self: left;
                    text-align: left;
                    margin-left: 30px;
+
+                   @media(min-width:1400px) {
+                    justify-self: left;
+                    text-align: left;
+                    margin-left: 0px;
                 }    
             }
         }
+    }
             p{
                 margin-left: 30px;
                 margin-top:30px;

@@ -97,13 +97,13 @@ h3 {
 .header {
   background-color: #F0EFE9;
   padding: 16px;
-  padding-bottom: 80px;
-  height: 200px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .header .container {
+  align-self: first baseline;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -164,6 +164,10 @@ h3 {
     align-items: center;
   }
 }
+.header .top-menu .contact-info a {
+  text-decoration: none;
+  color: #191919;
+}
 .header .top-menu .content-box {
   padding-right: 30px;
   margin-right: 30px;
@@ -204,6 +208,15 @@ h3 {
 }
 .header .main-menu nav a:hover {
   text-decoration: underline;
+}
+.header .main-menu nav #cont {
+  position: relative;
+}
+.header .main-menu nav #cont .emptybox {
+  width: 20px;
+  border: 1px solid #191919;
+  position: absolute;
+  left: 35%;
 }
 
 .first-section {
@@ -248,14 +261,23 @@ h3 {
 }
 .contact-ways .container {
   background-color: #FFFFFF;
-  display: flex;
-  justify-content: left;
-  align-items: center;
   gap: 35px;
   padding-top: 120px;
   padding-bottom: 80px;
   padding-left: 0;
   padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .contact-ways .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
 }
 .contact-ways .container .btn-black {
   font-size: 20px;
@@ -300,21 +322,39 @@ h3 {
   grid-area: line-1;
   letter-spacing: -1px;
   line-height: 15px;
+  font-size: 18px;
 }
 .contact-ways .line-2 {
   grid-area: line-2;
   letter-spacing: -1px;
   line-height: 15px;
+  font-size: 18px;
 }
-.contact-ways .nr-1 {
+.contact-ways .phone-1 {
   grid-area: line-1;
   letter-spacing: -1px;
   line-height: 15px;
+  text-decoration: none;
+  letter-spacing: -1px;
+  line-height: 25px;
+  font-size: 18px;
+  color: #191919;
 }
-.contact-ways .nr-2 {
+.contact-ways .phone-1:hover {
+  color: #f94d1C;
+}
+.contact-ways .phone-2 {
   grid-area: line-2;
   letter-spacing: -1px;
   line-height: 15px;
+  text-decoration: none;
+  letter-spacing: -1px;
+  line-height: 25px;
+  font-size: 18px;
+  color: #191919;
+}
+.contact-ways .phone-2:hover {
+  color: #f94d1C;
 }
 .contact-ways .mail {
   grid-area: line-1;
@@ -363,6 +403,14 @@ h3 {
   border: none;
   padding: 20px;
 }
+.message .your-mess {
+  align-self: center;
+  width: 80%;
+  border-radius: 25px;
+  border: none;
+  padding: 20px;
+  height: 160px;
+}
 .message .your-mess input {
   text-align: left;
   height: 160px;
@@ -390,6 +438,12 @@ h3 {
 .message .btn-yellow {
   width: 80%;
   align-self: center;
+}
+
+.map iframe {
+  padding-top: 120px;
+  width: 100%;
+  min-height: 620px;
 }
 
 footer {
