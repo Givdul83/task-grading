@@ -1036,13 +1036,14 @@ html, body{
         
     }
     .why-icons {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto;
         padding-top: 50px;
         column-gap: 30px;
         
 
        @media(min-width:1400px) {
-        
+        display:flex;
         flex-direction: column;
         padding-top: 0px;
        }
