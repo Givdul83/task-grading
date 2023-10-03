@@ -246,7 +246,7 @@ html, body{
                     
                     .emptybox {
                         width:20px;
-                        border: 1px solid #191919;
+                        border: 1px solid #666666;
                         position: absolute;
                         left: 30%;
                     }
@@ -1870,11 +1870,13 @@ footer {
         }
 
         article {
+
+            
             display: grid;
             grid-template-rows: auto auto auto auto auto;
             z-index: 2;
             position: relative;
-            
+            }
 
             a {
                 display: grid;
@@ -1887,6 +1889,7 @@ footer {
             } 
         }
         .company {
+            
             grid-area: company;
             padding-right: 30px;
             
@@ -1988,7 +1991,7 @@ footer {
         }
     
 }
-    }
+}   
         .border {
             color: #707070;
             
@@ -2021,7 +2024,7 @@ footer {
     }
     }
   
-}
+
 
 
    

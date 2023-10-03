@@ -214,7 +214,7 @@ h3 {
 }
 .header .main-menu nav #home .emptybox {
   width: 20px;
-  border: 1px solid #191919;
+  border: 1px solid #666666;
   position: absolute;
   left: 30%;
 }
@@ -1655,123 +1655,125 @@ footer .footer-1 .container article {
   z-index: 2;
   position: relative;
 }
-footer .footer-1 .container article a {
+footer .footer-1 .container a {
   display: grid;
   text-decoration: none;
   color: #FFFFFF;
 }
-footer .footer-1 .container article h3 {
+footer .footer-1 .container h3 {
   color: #FFFFFF;
   padding-top: 10px;
 }
-footer .footer-1 .container .company {
+footer .footer-1 .company {
   grid-area: company;
   padding-right: 30px;
 }
-footer .footer-1 .container .company .inside {
+footer .footer-1 .company .inside {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .container .company .inside {
+  footer .footer-1 .company .inside {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .container .company .inside h3 {
+footer .footer-1 .company .inside h3 {
   margin-bottom: 40px;
 }
-footer .footer-1 .container .company .inside a {
+footer .footer-1 .company .inside a {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .container .company .inside a {
+  footer .footer-1 .company .inside a {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .container .help {
+footer .footer-1 .help {
   grid-area: tre;
   padding-right: 20px;
 }
-footer .footer-1 .container .help .inside {
+footer .footer-1 .help .inside {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .container .help .inside {
+  footer .footer-1 .help .inside {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .container .help .inside h3 {
+footer .footer-1 .help .inside h3 {
   margin-bottom: 40px;
 }
-footer .footer-1 .container .help .inside a {
+footer .footer-1 .help .inside a {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .container .help .inside a {
+  footer .footer-1 .help .inside a {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .container .resources {
+footer .footer-1 .resources {
   grid-area: resources;
   padding-right: 20px;
 }
-footer .footer-1 .container .resources .inside {
+footer .footer-1 .resources .inside {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .container .resources .inside {
+  footer .footer-1 .resources .inside {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .container .resources .inside h3 {
+footer .footer-1 .resources .inside h3 {
   margin-bottom: 40px;
 }
-footer .footer-1 .container .resources .inside a {
+footer .footer-1 .resources .inside a {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .container .resources .inside a {
+  footer .footer-1 .resources .inside a {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .container .links {
+footer .footer-1 .links {
   grid-area: link;
 }
-footer .footer-1 .container .links .inside {
+footer .footer-1 .links .inside {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .container .links .inside {
+  footer .footer-1 .links .inside {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .container .links .inside h3 {
+footer .footer-1 .links .inside h3 {
   margin-bottom: 40px;
 }
-footer .footer-1 .container .links .inside a {
+footer .footer-1 .links .inside a {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .container .links .inside a {
+  footer .footer-1 .links .inside a {
     margin-bottom: 30px;
   }
 }
-footer .border {
+
+.border {
   color: #707070;
 }
-footer .container.bottom {
+
+.container.bottom {
   display: flex;
   justify-content: center;
   justify-content: space-between;
   padding-top: 35px;
 }
-footer .container.bottom p {
+.container.bottom p {
   color: #FFFFFF;
 }
-footer .container.bottom .social-media a {
+.container.bottom .social-media a {
   color: #FFFFFF;
   font-size: 1, 3rem;
   margin-left: 12px;
 }
-footer .container.bottom .social-media a:hover {
+.container.bottom .social-media a:hover {
   color: #666666;
 }

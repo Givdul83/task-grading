@@ -214,7 +214,7 @@ h3 {
 }
 .header .main-menu nav #cont .emptybox {
   width: 20px;
-  border: 1px solid #191919;
+  border: 1px solid #666666;
   position: absolute;
   left: 35%;
 }
